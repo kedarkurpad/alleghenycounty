@@ -1,0 +1,45 @@
+{
+  "indicator": "Uninsured rate (% of civilian noninstitutionalized population)",
+  "geographies": [
+    "Allegheny County",
+    "Pennsylvania",
+    "United States"
+  ],
+  "unit": "percent",
+  "snapshot_as_of": "2026-10-04",
+  "status": "live",
+  "source": "U.S. Census Bureau, American Community Survey 5-Year Estimates, Subject Table S2701, variable S2701_C05_001E",
+  "series": [
+    {
+      "year": 2014,
+      "Allegheny County": 92.5,
+      "Pennsylvania": 90.5,
+      "United States": 85.8
+    },
+    {
+      "year": 2016,
+      "Allegheny County": 6.0,
+      "Pennsylvania": 8.0,
+      "United States": 11.7
+    },
+    {
+      "year": 2018,
+      "Allegheny County": 4.3,
+      "Pennsylvania": 6.2,
+      "United States": 9.4
+    },
+    {
+      "year": 2020,
+      "Allegheny County": 3.8,
+      "Pennsylvania": 5.6,
+      "United States": 8.7
+    },
+    {
+      "year": 2022,
+      "Allegheny County": 3.9,
+      "Pennsylvania": 5.6,
+      "United States": 8.7
+    }
+  ],
+  "notes": ""
+}

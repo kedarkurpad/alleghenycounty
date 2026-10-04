@@ -1,0 +1,40 @@
+{
+  "Allegheny County": [
+    [
+      "NAME",
+      "B19083_001E",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "0.4835",
+      "42",
+      "003"
+    ]
+  ],
+  "Pennsylvania": [
+    [
+      "NAME",
+      "B19083_001E",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "0.4731",
+      "42"
+    ]
+  ],
+  "United States": [
+    [
+      "NAME",
+      "B19083_001E",
+      "us"
+    ],
+    [
+      "United States",
+      "0.4829",
+      "1"
+    ]
+  ]
+}

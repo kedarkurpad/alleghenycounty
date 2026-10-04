@@ -1,0 +1,154 @@
+{
+  "2016_Allegheny County": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "37.9",
+      "42",
+      "003"
+    ]
+  ],
+  "2016_Pennsylvania": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "40.9",
+      "42"
+    ]
+  ],
+  "2016_United States": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "us"
+    ],
+    [
+      "United States",
+      "42.0",
+      "1"
+    ]
+  ],
+  "2018_Allegheny County": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "37.5",
+      "42",
+      "003"
+    ]
+  ],
+  "2018_Pennsylvania": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "39.7",
+      "42"
+    ]
+  ],
+  "2018_United States": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "us"
+    ],
+    [
+      "United States",
+      "41.1",
+      "1"
+    ]
+  ],
+  "2020_Allegheny County": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "36.0",
+      "42",
+      "003"
+    ]
+  ],
+  "2020_Pennsylvania": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "38.1",
+      "42"
+    ]
+  ],
+  "2020_United States": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "us"
+    ],
+    [
+      "United States",
+      "40.0",
+      "1"
+    ]
+  ],
+  "2022_Allegheny County": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "35.9",
+      "42",
+      "003"
+    ]
+  ],
+  "2022_Pennsylvania": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "38.7",
+      "42"
+    ]
+  ],
+  "2022_United States": [
+    [
+      "NAME",
+      "DP04_0142PE",
+      "us"
+    ],
+    [
+      "United States",
+      "40.8",
+      "1"
+    ]
+  ]
+}

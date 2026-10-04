@@ -1,0 +1,19 @@
+{
+  "indicator": "Gini index of income inequality",
+  "geographies": [
+    "Allegheny County",
+    "Pennsylvania",
+    "United States"
+  ],
+  "unit": "index (0 to 1)",
+  "year": 2022,
+  "snapshot_as_of": "2026-10-04",
+  "status": "live",
+  "source": "U.S. Census Bureau, American Community Survey 5-Year Estimates, Table B19083, variable B19083_001E",
+  "values": {
+    "Allegheny County": 0.4835,
+    "Pennsylvania": 0.4731,
+    "United States": 0.4829
+  },
+  "notes": "Single most recent year only - Gini moves too slowly for a meaningful multi-year line chart at this margin of error."
+}

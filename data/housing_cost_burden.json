@@ -1,0 +1,39 @@
+{
+  "indicator": "Renter households paying 35%+ of income on gross rent (%)",
+  "geographies": [
+    "Allegheny County",
+    "Pennsylvania",
+    "United States"
+  ],
+  "unit": "percent",
+  "snapshot_as_of": "2026-10-04",
+  "status": "live",
+  "source": "U.S. Census Bureau, American Community Survey 5-Year Estimates, Data Profile DP04, variable DP04_0142PE",
+  "series": [
+    {
+      "year": 2016,
+      "Allegheny County": 37.9,
+      "Pennsylvania": 40.9,
+      "United States": 42.0
+    },
+    {
+      "year": 2018,
+      "Allegheny County": 37.5,
+      "Pennsylvania": 39.7,
+      "United States": 41.1
+    },
+    {
+      "year": 2020,
+      "Allegheny County": 36.0,
+      "Pennsylvania": 38.1,
+      "United States": 40.0
+    },
+    {
+      "year": 2022,
+      "Allegheny County": 35.9,
+      "Pennsylvania": 38.7,
+      "United States": 40.8
+    }
+  ],
+  "notes": ""
+}

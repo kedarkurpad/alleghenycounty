@@ -24,15 +24,35 @@ jobs:
       - name: Install dependencies
         run: pip install -r notebooks/requirements.txt jupyter nbconvert nbclient
 
-      - name: Run pipeline notebook
+      - name: Run Census SNAP pipeline notebook
         env:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
         run: jupyter nbconvert --to notebook --execute --inplace notebooks/pull_clean_export.ipynb
+
+      - name: Run Census uninsured rate pipeline notebook
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: jupyter nbconvert --to notebook --execute --inplace notebooks/pull_uninsured.ipynb
+
+      - name: Run Census housing cost burden pipeline notebook
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: jupyter nbconvert --to notebook --execute --inplace notebooks/pull_housing_cost_burden.ipynb
+
+      - name: Run Census Gini pipeline notebook
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: jupyter nbconvert --to notebook --execute --inplace notebooks/pull_gini.ipynb
+
+      - name: Run FRED unemployment pipeline notebook
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: jupyter nbconvert --to notebook --execute --inplace notebooks/pull_unemployment.ipynb
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ raw/ notebooks/pull_clean_export.ipynb
-          git diff --cached --quiet || git commit -m "Update Community Needs Indexing data (manual pipeline run)"
+          git add data/ raw/ notebooks/
+          git diff --cached --quiet || git commit -m "Update indicator data (manual pipeline run)"
           git push
