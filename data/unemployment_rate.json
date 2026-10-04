@@ -1,0 +1,75 @@
+{
+  "indicator": "Unemployment rate (%), annual average",
+  "geographies": [
+    "Allegheny County",
+    "Pennsylvania",
+    "United States"
+  ],
+  "unit": "percent",
+  "snapshot_as_of": "2026-10-04",
+  "status": "live",
+  "source": "Federal Reserve Economic Data (FRED), series PAALLE3URN, PAUR, UNRATE (underlying data from the Bureau of Labor Statistics Local Area Unemployment Statistics program)",
+  "series": [
+    {
+      "year": 2014,
+      "Allegheny County": 5.4,
+      "Pennsylvania": 6.0,
+      "United States": 6.2
+    },
+    {
+      "year": 2015,
+      "Allegheny County": 5.1,
+      "Pennsylvania": 5.4,
+      "United States": 5.3
+    },
+    {
+      "year": 2016,
+      "Allegheny County": 5.0,
+      "Pennsylvania": 5.3,
+      "United States": 4.9
+    },
+    {
+      "year": 2017,
+      "Allegheny County": 4.7,
+      "Pennsylvania": 5.0,
+      "United States": 4.4
+    },
+    {
+      "year": 2018,
+      "Allegheny County": 4.1,
+      "Pennsylvania": 4.4,
+      "United States": 3.9
+    },
+    {
+      "year": 2019,
+      "Allegheny County": 4.0,
+      "Pennsylvania": 4.3,
+      "United States": 3.7
+    },
+    {
+      "year": 2020,
+      "Allegheny County": 8.7,
+      "Pennsylvania": 8.8,
+      "United States": 8.1
+    },
+    {
+      "year": 2021,
+      "Allegheny County": 5.6,
+      "Pennsylvania": 6.0,
+      "United States": 5.4
+    },
+    {
+      "year": 2022,
+      "Allegheny County": 4.0,
+      "Pennsylvania": 4.1,
+      "United States": 3.6
+    },
+    {
+      "year": 2023,
+      "Allegheny County": 3.5,
+      "Pennsylvania": 3.7,
+      "United States": 3.6
+    }
+  ],
+  "notes": "Annual average of monthly, not seasonally adjusted values."
+}

@@ -6,7 +6,7 @@ Static site. No backend, no login, no scheduled updates.
 
 ```
 /data        -> JSON the site reads, output of the pipeline
-/notebooks   -> pull/clean/export, run by hand a few times/year
+/notebooks   -> pull/clean/export notebooks, run by hand
 /site        -> single page for now (index.html, /css, /js)
 /raw         -> dated cache of raw pulls
 ```
@@ -16,10 +16,11 @@ Static site. No backend, no login, no scheduled updates.
 ## Current state
 
 - Single page, nav collapsed to one category, not live yet.
-- All visible copy in `site/index.html` is a `[PLACEHOLDER]` block. Replace and review before publishing
-  anything; do not ship drafted copy without reading it first.
-- `data/community_needs_index.json` has `null` values on purpose. The chart shows "no data loaded yet"
-  until `notebooks/pull_clean_export.ipynb` is run against a real source.
+- All headline/intro/footer copy in `site/index.html` is a `[PLACEHOLDER]` block. Replace and review
+  before publishing anything.
+- Two live data modules, both Allegheny County vs. Pennsylvania vs. United States:
+  - **Community Needs Indexing** - SNAP / food stamp receipt rate, Census ACS5 Subject Table S2201.
+  - **Unemployment Rate** - annual average, FRED series `PAALLE3URN` / `PAUR` / `UNRATE`.
 - Additional pages (separate sections, full nav) come back when deliberately re-expanded. See `parked-ideas.md`.
 
 ## Local dev
@@ -29,20 +30,29 @@ cd site
 python3 -m http.server 8000
 ```
 
-`fetch()` of local JSON is blocked over `file://`, hence the server. `js/main.js` fetches
-`../data/community_needs_index.json`, relative to `/site/`.
+`fetch()` of local JSON is blocked over `file://`, hence the server. `site/js/main.js` fetches both data
+files with one shared loader function, each relative to `/site/`.
 
 ## Updating data
 
-Indicator: SNAP / food stamp receipt rate, Census ACS 5-year Subject Table S2201, Allegheny County vs.
-Pennsylvania vs. United States.
+Two independent pipelines, two API keys, same pattern for both.
 
-1. Set `CENSUS_API_KEY` as an environment variable - don't paste it into the notebook. In a Codespace:
-   repo Settings -> Secrets and variables -> Codespaces -> add `CENSUS_API_KEY`. Or for a one-off terminal
-   session: `export CENSUS_API_KEY=your_key`.
-2. `pip install -r notebooks/requirements.txt`
-3. Run `notebooks/pull_clean_export.ipynb` top to bottom. Writes a dated raw cache to `/raw`, overwrites
-   `/data/community_needs_index.json`.
+### Option A - run from GitHub, keys never touch your machine (recommended)
+
+1. Repo Settings -> Secrets and variables -> **Actions** -> New repository secret for each:
+   `CENSUS_API_KEY` and `FRED_API_KEY`.
+2. Actions tab -> "Run data pipeline (manual)" -> **Run workflow**.
+3. Runs both notebooks, commits the updated `/data` and `/raw` files, pushes to `main` - which triggers
+   the Pages deploy automatically.
+
+### Option B - run locally in the Codespace
+
+1. `pip install -r notebooks/requirements.txt`
+2. `export CENSUS_API_KEY=your_key` and `export FRED_API_KEY=your_key` in the terminal - session-only,
+   never written to disk or git. If running the notebook (not the terminal) directly, the kernel needs to
+   already exist in an environment where these are set, or you paste the key into a throwaway cell and
+   delete it before saving/committing.
+3. Run `notebooks/pull_clean_export.ipynb` and/or `notebooks/pull_unemployment.ipynb` top to bottom.
 4. Commit, push.
 
 ## Pages setup
