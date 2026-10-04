@@ -1,0 +1,16 @@
+{
+  "indicator": "SNAP participation rate (% of eligible population enrolled)",
+  "geographies": ["Allegheny County", "Pennsylvania", "United States"],
+  "unit": "percent",
+  "snapshot_as_of": "PLACEHOLDER - set when real data is pulled",
+  "status": "PLACEHOLDER DATA - not real. Replace by running notebooks/pull_clean_export.ipynb against WPRDC or Census/ACS and re-exporting this file.",
+  "source": "PLACEHOLDER - cite actual WPRDC dataset ID or Census/ACS table ID here once pulled",
+  "series": [
+    { "year": 2019, "Allegheny County": null, "Pennsylvania": null, "United States": null },
+    { "year": 2020, "Allegheny County": null, "Pennsylvania": null, "United States": null },
+    { "year": 2021, "Allegheny County": null, "Pennsylvania": null, "United States": null },
+    { "year": 2022, "Allegheny County": null, "Pennsylvania": null, "United States": null },
+    { "year": 2023, "Allegheny County": null, "Pennsylvania": null, "United States": null }
+  ],
+  "notes": "Values are null on purpose. This file is a schema stub, not sample data with fabricated numbers - the chart renders a visible 'no data loaded yet' state until this is replaced with a real pull. See /notebooks/pull_clean_export.ipynb."
+}
