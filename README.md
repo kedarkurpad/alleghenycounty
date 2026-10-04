@@ -34,9 +34,16 @@ python3 -m http.server 8000
 
 ## Updating data
 
-1. Set `SOURCE_URL` in `notebooks/pull_clean_export.ipynb` to a real WPRDC or Census/ACS endpoint.
-2. Run it. Writes a dated raw cache to `/raw`, overwrites `/data/community_needs_index.json`.
-3. Commit, push.
+Indicator: SNAP / food stamp receipt rate, Census ACS 5-year Subject Table S2201, Allegheny County vs.
+Pennsylvania vs. United States.
+
+1. Set `CENSUS_API_KEY` as an environment variable - don't paste it into the notebook. In a Codespace:
+   repo Settings -> Secrets and variables -> Codespaces -> add `CENSUS_API_KEY`. Or for a one-off terminal
+   session: `export CENSUS_API_KEY=your_key`.
+2. `pip install -r notebooks/requirements.txt`
+3. Run `notebooks/pull_clean_export.ipynb` top to bottom. Writes a dated raw cache to `/raw`, overwrites
+   `/data/community_needs_index.json`.
+4. Commit, push.
 
 ## Pages setup
 
