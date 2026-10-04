@@ -1,0 +1,154 @@
+{
+  "2016_Allegheny County": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "12.3",
+      "42",
+      "003"
+    ]
+  ],
+  "2016_Pennsylvania": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "13.0",
+      "42"
+    ]
+  ],
+  "2016_United States": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "us"
+    ],
+    [
+      "United States",
+      "13.0",
+      "1"
+    ]
+  ],
+  "2018_Allegheny County": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "12.4",
+      "42",
+      "003"
+    ]
+  ],
+  "2018_Pennsylvania": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "13.2",
+      "42"
+    ]
+  ],
+  "2018_United States": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "us"
+    ],
+    [
+      "United States",
+      "12.2",
+      "1"
+    ]
+  ],
+  "2020_Allegheny County": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "12.0",
+      "42",
+      "003"
+    ]
+  ],
+  "2020_Pennsylvania": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "13.1",
+      "42"
+    ]
+  ],
+  "2020_United States": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "us"
+    ],
+    [
+      "United States",
+      "11.4",
+      "1"
+    ]
+  ],
+  "2022_Allegheny County": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state",
+      "county"
+    ],
+    [
+      "Allegheny County, Pennsylvania",
+      "12.3",
+      "42",
+      "003"
+    ]
+  ],
+  "2022_Pennsylvania": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "state"
+    ],
+    [
+      "Pennsylvania",
+      "13.6",
+      "42"
+    ]
+  ],
+  "2022_United States": [
+    [
+      "NAME",
+      "S2201_C04_001E",
+      "us"
+    ],
+    [
+      "United States",
+      "11.5",
+      "1"
+    ]
+  ]
+}
